@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1662201308147" clover="3.2.0">
+  <project timestamp="1662201308147" name="All files">
+    <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="5" elements="17" coveredelements="15" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
+    <file name="utils.js" path="/home/spk.no/bjg/project/jest-demo/src/utils.js">
+      <metrics statements="10" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="5"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="4" type="cond" truecount="1" falsecount="1"/>
+      <line num="10" count="4" type="stmt"/>
+      <line num="12" count="0" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="21" count="1" type="stmt"/>
+      <line num="38" count="1" type="stmt"/>
+      <line num="39" count="3" type="stmt"/>
+    </file>
+  </project>
+</coverage>
