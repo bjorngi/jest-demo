@@ -38,3 +38,15 @@ export const dateOfTomorrow = () => {
 export const filterStatus = (statusToFilter) => (obj) => {
   return !statusToFilter.includes(obj.status);
 };
+
+/**
+ * @param firstName First mame, including middle names
+ * @param lastName Last name
+ *
+ * @example
+ * formatVisibleName("Bjørn", "Gilstad") => "B. Gilstad"
+ * formatVisibleName("Joar Roger", "Andersen") => "J. R. Andersen"
+ */
+export const formatVisibleName = (firstName, lastName) => {
+  return `${firstName} ${lastName}`;
+};
