@@ -1,4 +1,9 @@
-import { sumOfArray, dateOfTomorrow, filterStatus } from "./utils";
+import {
+  sumOfArray,
+  dateOfTomorrow,
+  filterStatus,
+  formatVisibleName,
+} from "./utils";
 
 describe("sumOfArray", () => {
   it("should sum array of numbers and get 10", () => {
@@ -53,5 +58,21 @@ describe("filterStatus", () => {
     const actualIdsLeft = output.map((c) => c.id);
 
     expect(actualIdsLeft).toStrictEqual(expectedIdsLeft);
+  });
+});
+
+describe("formatVisibleName", () => {
+  it("should format name Bjørn Gilstad to B. Gilstad", () => {
+    const actual = formatVisibleName("Bjørn", "Gilstad");
+    const expected = "B. Gilstad";
+
+    expect(actual).toBe(expected);
+  });
+
+  it("should format name 'Joar Roger Andersen' to 'J. R. Andersen'", () => {
+    const actual = formatVisibleName("Joar Roger", "Andersen");
+    const expected = "J. R. Andersen";
+
+    expect(actual).toBe(expected);
   });
 });
