@@ -14,12 +14,12 @@ describe("sumOfArray", () => {
     expect(actual).toBe(10);
   });
 
-  //  it("should ignore data other then numbers", () => {
-  //    const testData = [1, 2, "data", 3, undefined, 4, null];
-  //    const actual = sumOfArray(testData);
-  //
-  //    expect(actual).toBe(10);
-  //  });
+  it("should ignore data other then numbers", () => {
+    const testData = [1, 2, "data", 3, undefined, 4, null];
+    const actual = sumOfArray(testData);
+
+    expect(actual).toBe(10);
+  });
 });
 
 describe("dateOfTomorrow", () => {
